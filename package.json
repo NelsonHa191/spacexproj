@@ -1,0 +1,19 @@
+{
+  "name": "spacex-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "cd client && npm start",
+    "server": "cd server && node server.js",
+    "build": "npm run build --workspace client",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "@apollo/client": "^3.5.5",
+    "graphql": "^15.5.0",
+    "cors": "^2.8.5"
+  }
+}
